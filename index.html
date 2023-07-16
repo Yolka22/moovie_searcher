@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <main>
+      <form id="search-form">
+        <h3>Search</h3>
 
-    
-
+        <div class="input-container">
+          <label for="Title">Title :</label>
+          <input type="text" name="Title" id="Title" />
+        </div>
+        <div class="input-container">
+          <label for="Type">Type :</label>
+          <select name="Type" id="Type">
+            <option value="movie">movie</option>
+            <option value="series">series</option>
+            <option value="episode">episode</option>
+          </select>
+        </div>
+        <div class="input-container">
+            <input type="submit" value="Search">
+        </div>
+      </form>
+    </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
